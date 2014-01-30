@@ -1,84 +1,109 @@
-package solitaire;
+/*package solitaire;
 
 import java.util.Scanner;
 
 public class Boule {
 	
-	private Scanner sc = new Scanner(System.in);
-	private int coorBase;
-	private int coorArr;
-	private int bille = 32;
-	private boolean accessible;
-	private boolean plein;
+	private int coorLigneBase;
+	private int coorColonneBase;
+	private int coorLigneArr;
+	private int coorColonneArr;
+	private String Direction;
+	//private int Bille = 32;
 	
-	public void SelectionBille()
+	//direction
+	public void direction()
 	{
-		System.out.println("Saisissez les coordonnés de la bille a déplacer ");
-		setCoorBase(sc.nextInt());
+		System.out.println("Saisissez la direction");
+		setDirection(sc.toString());
 	}
 	
-	public void DestinationBille()
+	//case de depart
+	public void SelectionLigneBille()
 	{
-		System.out.println("Saisissez les coordonnés de d'arrivé");
-		setCoorArr(sc.nextInt());
+		System.out.println("Saisissez la ligne de la bille a déplacer ");
+		setCoorLigneBase(sc.nextInt());
 	}
 	
-	public void AffichageMessage(){
-		while(bille>1){
-			SelectionBille();
+	public void SelectionColonneBille()
+	{
+		System.out.println("Saisissez la colonne de la bille a déplacer ");
+		setCoorLigneBase(sc.nextInt());
+	}
+	
+	//case d'arrive 
+	public void DestinationLigneBille()
+	{
+		System.out.println("Saisissez la ligne de d'arrivé");
+		setCoorLigneArr(sc.nextInt());
+	}
+	
+	public void DestinationColonneBille()
+	{
+		System.out.println("Saisissez la colonne de d'arrivé");
+		setCoorLigneArr(sc.nextInt());
+	}
+	
+	
+	/*public void AffichageMessage(){
+		while(Bille>1)
+		{	
 			DestinationBille();
-			bille --;
+			Bille --;
 		}
-		
+	}
+	
+	
+	
+	// GETER SETER
+	public int getCoorLigneBase() {
+		return coorLigneBase;
 	}
 
-	public void setPlein(boolean plein) {
-		this.plein = plein;
+	public void setCoorLigneBase(int CoorLigneBase) {
+		this.coorLigneBase = CoorLigneBase;
 	}
 
-	public boolean isPlein() {
-		return plein;
+	public int getCoorLigneArr() {
+		return coorLigneArr;
 	}
 
-	public boolean isAccessible() {
-		return accessible;
+	public void setCoorLigneArr(int CoorLigneArr) {
+		this.coorLigneArr = CoorLigneArr;
+	}
+	
+	public int getCoorColonneArr() {
+		return coorColonneArr;
 	}
 
-
-	public void setAccessible(boolean accessible) {
-		this.accessible = accessible;
+	public void setCoorColonneArr(int CoorColonneArr) {
+		this.coorColonneArr = CoorColonneArr;
 	}
 
-	public int getCoorBase() {
-		return coorBase;
-	}
-
-	public void setCoorBase(int CoorBase) {
-		this.coorBase = CoorBase;
-	}
-
-	public int getCoorArr() {
-		return coorArr;
-	}
-
-	public void setCoorArr(int CoorArr) {
-		this.coorArr = CoorArr;
-	}
-
-	public int getBille() {
-		return bille;
+	/*public int getBille() {
+		return Bille;
 	}
 
 	public void setBille(int bille) {
-		this.bille = bille;
+		this.Bille = bille;
+	}
+
+	public int getCoorColonneBase() {
+		return coorColonneBase;
+	}
+
+	public void setCoorColonneBase(int coorColonneBase) {
+		this.coorColonneBase = coorColonneBase;
 	}
 	
-	public void deplacementValide()
-	{
-			if (isAccessible() == true){
-				
-			}
+	public String getDirection() {
+		return Direction;
 	}
-}
 
+	public void setDirection(String Direction) {
+		this.Direction = Direction;
+	}
+	
+}
+*/
 
